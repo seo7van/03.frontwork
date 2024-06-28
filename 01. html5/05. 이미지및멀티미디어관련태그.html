@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. 이미지 및 멀티미디어 관련 태그</title>
+</head>
+<body>
+    <!--
+        이미지 삽입 태그
+        <img src = "삽입하고자 하는 이미지 경로" [alt="이미지설명문구", width="가로길이(px/%), hieght="세로길이(px/%)"]
+    -->
+    <h1>이미지 관련 태그</h1>
+    <h3>* src 속성</h3>
+    <figure>
+    <img src="resources/img/단비짤.jpg"> <!-- 상대 경로 -->
+    <img src="C:/csj/Front-work/html5/resources/img/단비짤2.jpg"> <!-- 절대 경로 -->
+    <figcaption>요 일주일 최서진</figcaption>
+    </figure>
+
+    <br>
+
+    <h3>* alt 속성</h3>
+    <p>
+        - 사진의 경로가 잘못되었거나 이미지를 제대로 표현하지 못할 경우 대체 텍스트의 용도 <br>
+        - 시각장애인들을 위한 스크린리더(화면낭독기)에서 이미지를 읽어주는 설명 문구 <br>
+        - 그림이 없을때 설명이 나옴
+    </p>
+    <img src="resources/img/단비짤.jg" alt="요 일주일동안 서진이 모습이다."><br> 
+    <img src="resources/img/단비짤.jpg" alt="요 일주일동안 서진이 모습이다.">
+    <br>
+
+    <h3>* width와 height속성</h3>
+    <p>
+        이미지의 가로, 세로 길이 조절을  하는 속성<br>
+        고정길이(px), 가변길이(%)로 지정 => 기본값은 px
+    </p>
+
+    <h4>고정길이단위(px) === 기본값 : 화면사이즈가 조정되어도 이미지의 크기는 변하지 않는다</h4>
+
+    <img src="resources/img/단비 속상해.jpg" width="250" height="">
+    <img src="resources/img/단비 자는중.jpg" width="250" height="">
+    <img src="resources/img/단비 짜증내는 짤.webp" width="250" height="">
+    <img src="resources/img/서진.jpg" width="250" height="">
+
+    <h4>가변길이단위(%) : 화면사이즈 또는 부모요소사이즈에 따라 이미지의 크기도 같이 변도</h4>
+    <img src="resources/img/단비 속상해.jpg" width="23%" height="">
+    <img src="resources/img/단비 자는중.jpg" width="23%" height="">
+    <img src="resources/img/단비 짜증내는 짤.webp" width="23%" height="">
+    <img src="resources/img/서진.jpg" width="23%" height="">
+
+    <hr>
+
+    <h1>미디어 관련 태그</h1>
+
+    <h3>오디오 관련 태그</h3>
+    <!--
+        <audio src="삽입하고자 하는 오디오 경로" [controls autoplay loop]></audio>
+        <audio src="삽입하고자 하는 오디오 경로" [controls autoplay loop]/>
+    -->
+    <audio src="오디오 없음" [controls autoplay loop]></audio>
+
+    <hr>
+
+    <h3>비디오 관련 태그</h3>
+    <!--
+        <video src="삽입하고자 하는 비디오 경로" [controls autoplay loop poster="썸네일 이미지 경로" width="" height=""]></video>
+    -->
+    <video src="resources/video/아따아따 단비 쭈쭈바 따라하기.mp4"controls width="400" height="300"
+    poster="resources/img/단비 짜증내는 짤.webp"></video>
+</body>
+</html>
