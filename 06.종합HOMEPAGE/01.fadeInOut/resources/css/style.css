@@ -6,7 +6,7 @@ body {width:1000px;}
 
 /* 헤더부분 */
 header {height: 100px;}
-header>div {float: left;}
+
 header>div>img {width: 100px; margin-top: 25px; box-shadow: 10px 10px 5px black;}
 
 header>nav{float: right; margin-top: 25px; padding: 10px;}
